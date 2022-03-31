@@ -59,8 +59,6 @@ let p = 20;
 console.log('Saulius nusipirks ' + Math.floor(c / p) + ' porcijas, liks ' + c % p + ' centu')
 
 
-
-
 /* Nr. 6 */
 console.log('Nr6');
 
@@ -75,14 +73,23 @@ if((n %= 3) !== 0) {
 } else  {console.log('Trikampi sudelioti galima');
 }
 
-/* Nr. 7 */
+/* Nr. 7 * NETEISINGAS */
 console.log('Nr7');
-m = 7
-b = [1, 3, 5, 7, 8, 10, 12]
-a = [ 4, 6, 9, 11, 12];
-c = 2
 
-
+let m = 0
+if(m == 2) {
+    console.log('28');
+} else if(m == 4) {
+    console.log('30');
+} else if(m == 6) {
+    console.log('30');
+} else if(m == 9) {
+    console.log('30');
+} else if(m == 11) {
+    console.log('30');
+} else if(m <= 12, m !==0) {
+    console.log('31');
+}
 /* Nr 8 */
 console.log('Nr8')
 
