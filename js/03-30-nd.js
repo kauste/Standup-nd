@@ -45,7 +45,7 @@ if(k / n < d) {
 console.log('Nr4');
 
 let a = 7;
-let b= 9;
+let b = 9;
 if(a > b) {
     console.log(--a, ++b);
 } else {console.log(++a, --b);
@@ -62,13 +62,13 @@ console.log('Saulius nusipirks ' + Math.floor(c / p) + ' porcijas, liks ' + c % 
 /* Nr. 6 */
 console.log('Nr6');
 
-n = 12;
-if ((n %= 3) === 0) {
+n = 11;
+if ((n % 3) === 0) {
      console.log('Trikampi sudelioti galima');
 } else {console.log('Trikampio sudelioti negalima');
 }
 
-if((n %= 3) !== 0) {
+if((n % 3) !== 0) {
      console.log('Trikampio sudelioti negalima');
 } else  {console.log('Trikampi sudelioti galima');
 }
@@ -94,26 +94,27 @@ if(m == 2) {
 console.log('Nr8')
 
 k = 6;
-if(k %= 2) {
+if(k % 2 === 1) {
     console.log('Kambari tvarkys jaunelis');
-} else {console.log('Kambari tvarkys vyresnelis')}
+} else {console.log('Kambari tvarkys vyresnelis');
+}
 
 /* Nr9 */
 console.log('Nr9')
 
 m = 1904;
-
 if((m - 1896) % 4 == 0) {
     console.log((m - 1896)/ 4 + 1);
-}   else console.log('Metai neolimpiniai')
+}   else {console.log('Metai neolimpiniai');
+}
 
 
-m = 2005;
-
-om = m - 1986;
-if(om %= 4 == 0) {
+m = 1908;
+let om = m - 1986;
+if(om % 4 === 0) {
     console.log(om / 4 + 1);
-}   else console.log('Metai neolimpiniai')
+} else {console.log('Metai neolimpiniai');
+}
 
 /* 10 */
 console.log('Nr10')
@@ -126,10 +127,12 @@ m = 5;
 
 if((v * 60 + m) - (v1 * 60 + m1 + m2) >= 0) {
     console.log('Petras i pamoka nepaveluos');
-} else {console.log('Petras i pamoka paveluos')}
+} else {console.log('Petras i pamoka paveluos');
+}
 
-const isejimoLaikas= v1 * 60 + m1;
-const pamokosPradzia= v * 60 + m;
+
+const isejimoLaikas = v1 * 60 + m1;
+const pamokosPradzia = v * 60 + m;
 if((pamokosPradzia - isejimoLaikas - m2) >= 0) {
     console.log('Petras i pamoka nepaveluos');
 } else {console.log('Petras i pamoka paveluos')}
