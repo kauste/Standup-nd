@@ -65,7 +65,7 @@ console.log(priklauso)
 console.log(`--Nr.9.--`);
 
 function tekstai(e, f) {
-    return `Pirmas tekstas turi ${e.length} raidziu, antras tekstas turi ${f.length} raidziu.}`
+    return `Pirmas tekstas turi ${e.length} raidziu, antras tekstas turi ${f.length} raidziu.`
 }
 
 const t = tekstai('Kieme isproteje zmones vidury nakties drozia motociklus', 'Tuo tarpu as normali naktim mokausi.') 
