@@ -31,8 +31,11 @@ for(let n = 49; n <54; n++) {
 console.log('--Nr.5.--');
 
 function rand(min, max) {
-    return Math.floor(Math.random() * (10 - 1 + 1) + 1);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 } 
+
+const r1 = rand(1, 10)
+console.log(r1)
 
 /* Nr.6. */
 console.log('--Nr.6.--');
@@ -91,6 +94,12 @@ for( let m = 0; m < 2022; m += 4) {
             console.log(m)
         } else if (m % 100 !== 0)
   console.log(m)} 
+
+let d1 = 400;
+ if (d1 % 4 === 0 && d1 % 100 !== 0 || d1 % 400 === 0 ) {
+            console.log ('keliamieji') 
+     } else {console.log('nekeliamieji')
+}
 
 
 
