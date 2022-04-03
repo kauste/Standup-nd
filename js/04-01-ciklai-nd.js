@@ -30,6 +30,9 @@ for(let n = 49; n <54; n++) {
 /* Nr.5. */
 console.log('--Nr.5.--');
 
+function rand(min, max) {
+    return Math.floor(Math.random() * (10 - 1 + 1) + 1);
+} 
 
 /* Nr.6. */
 console.log('--Nr.6.--');
@@ -88,6 +91,7 @@ for( let m = 0; m < 2022; m += 4) {
             console.log(m)
         } else if (m % 100 !== 0)
   console.log(m)} 
+
 
 
 
