@@ -61,7 +61,18 @@ function raides(zodyje) {
 const priklauso = raides('teletabis')
 console.log(priklauso)
 
+/* Nr. 9 */
+console.log(`--Nr.9.--`);
+
+function tekstai(e, f) {
+    return `Pirmas tekstas turi ${e.length} raidziu, antras tekstas turi ${f.length} raidziu.}`
+}
+
+const t = tekstai('Kieme isproteje zmones vidury nakties drozia motociklus', 'Tuo tarpu as normali naktim mokausi.') 
+console.log(t)
+
 /* Nr. 10 */
+console.log(`--Nr.10.--`);
 
 const zodis = 'Sarlatanas';
 const zodisLength = zodis.length;
