@@ -76,7 +76,7 @@ if((n % 3) !== 0) {
 /* Nr. 7 * NETEISINGAS */
 console.log('Nr7');
 
-let m = 0
+let m = 50
 if(m == 2) {
     console.log('28');
 } else if(m == 4) {
@@ -104,17 +104,17 @@ console.log('Nr9')
 
 m = 1904;
 if((m - 1896) % 4 == 0) {
-    console.log((m - 1896)/ 4 + 1);
-}   else {console.log('Metai neolimpiniai');
+   console.log((m - 1896)/ 4 + 1);
+} else {console.log('Metai neolimpiniai');
 }
 
-
 m = 1908;
-let om = m - 1986;
-if(om % 4 === 0) {
+let om = m - 1896;
+if(om % 4 == 0) {
     console.log(om / 4 + 1);
 } else {console.log('Metai neolimpiniai');
 }
+
 
 /* 10 */
 console.log('Nr10')
