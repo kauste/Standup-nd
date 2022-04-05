@@ -12,24 +12,30 @@ console.log(z);
 console.log(`--Nr.2.--`);
 
 function palyginimas(x, y) {
-    return `x > y is ${x > y}, x < y is ${x < y}, x = y is ${x == y}.`
+    if(typeof x !== 'number' || typeof y !== 'number' || '' + x === NaN || '' + y === NaN){
+        return 'ERROR';
+    } else if (x > y) {
+        return `${x} > ${y}`;
+    } else if( x < y) {
+        return `${x} < ${y}`;
+    } else if(x === y) {
+        return `${x} = ${y}`;
+    } else return 'ERROR';
 }
 
-const w = palyginimas(7, 9)
-console.log(w)
+console.log(palyginimas(Infinity, 9));
 
 /* Nr.3. */
 console.log(`--Nr.3.--`);
 
 function metai(d) {
-    return `${d}`
+    if (d % 4 === 0 && d % 100 !== 0 || d % 400 === 0 ) {
+        console.log ('keliamieji');
+    } else {
+        console.log('nekeliamieji');
+    }
 }
-
-const d1 = metai(2040)
-if (d1 % 4 === 0 && d1 % 100 !== 0 || d1 % 400 === 0 ) {
-    console.log ('keliamieji') 
-} else {console.log('nekeliamieji')
-}
+metai(2040);
 
 /* Nr.4. */
 console.log(`--Nr.4.--`);
@@ -44,45 +50,68 @@ console.log(keliamasis)
 /* Nr.5. */
 console.log(`--Nr.5.--`);
 
+sum = 0;
+function skaicius (a) {
+    if(a > 1) {
+        for (i = 1; i <= a; i++){
+            sum += i;   
+        } return sum;
+    } else return 'ERROR'
+}
+console.log(skaicius(1))
 
 /* Nr.6. */
 console.log(`--Nr.6.--`);
+sum = 0;
+function argumentas(x) {
+    for(i = 0; i < x; i++) {
+        if(x % i === 0){
+            sum += 1;
+        } 
+    } return sum;
+}
 
-
+console.log(argumentas(32));
 
 /* Nr.7. */
 console.log(`--Nr.7.--`);
 
-
 function raides(zodyje) {
-    return `Zodis ${zodyje} turis ${zodyje.length} raides`
+    return `Zodis ${zodyje} turis ${zodyje.length} raides`;
 }
 
-const priklauso = raides('teletabis')
-console.log(priklauso)
+const priklauso = raides('teletabis');
+console.log(priklauso);
+
+/* Nr.8. */
+console.log(`--Nr.8.--`);
+
+
+function telefonoNumeris (masyvas) {
+    return `(${m[0]}${m[1]}${m[2]}) ${m[3]}${m[4]}${m[5]}-${m[6]}${m[7]}${m[8]}${m[9]}`;
+}
+
+let m = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+console.log(telefonoNumeris(m));
 
 /* Nr. 9 */
 console.log(`--Nr.9.--`);
 
 function tekstai(e, f) {
-    return `Pirmas tekstas turi ${e.length} raidziu, antras tekstas turi ${f.length} raidziu.`
+    return `Pirmas tekstas turi ${e.length} raidziu, antras tekstas turi ${f.length} raidziu.`;
 }
 
-const t = tekstai('Kieme isproteje zmones vidury nakties drozia motociklus', 'Tuo tarpu as normali naktim mokausi.') 
-console.log(t)
+const t = tekstai('Kieme isproteje zmones vidury nakties drozia motociklus', 'Tuo tarpu as normali naktim mokausi.'); 
+console.log(t);
 
 /* Nr. 10 */
 console.log(`--Nr.10.--`);
 
 const zodis = 'Sarlatanas';
-const zodisLength = zodis.length;
  let suma = 0;
 for (i = 0; i < zodis.length; i++) {
-    if(zodis[i] == 'a')
+    if(zodis[i] == 'a');
     suma += 1;
 }
 
-console.log(suma)
-
-
-
+console.log(suma);

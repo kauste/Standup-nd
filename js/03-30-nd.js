@@ -1,30 +1,28 @@
 
 /* Nr.1*/
-console.log('Nr1')
+console.log('---Nr1---')
 
 let n = 20;
 if(n > 0) {
     console.log('geras');
-} else {console.log('blogas');
+} else if(n < 0);
+    {console.log('blogas');
 }
 
 /* Nr.2*/
-console.log('Nr2')
+console.log('---Nr2---')
 
 n = 2;
-if(n == 1) {
+if(n === 1) {
     console.log('Eikite');
-} else {console.log('Palaukite');
-}
-
-n = 2;
-if(n =! 2) {
-    console.log('Eikite');
-} else {console.log('Palaukite');
+} else if(n === 2){
+    console.log('Palaukite');
+} else if(n === 3) {
+    console.log('Sustokite');
 }
 
 /* Nr. 3 */
-console.log('Nr3')
+console.log('---Nr3---')
 
 n = 2;
 let d = 3;
@@ -42,17 +40,18 @@ if(k / n < d) {
 }
 
 /* Nr. 4 */
-console.log('Nr4');
+console.log('---Nr4---');
 
 let a = 7;
 let b = 9;
 if(a > b) {
     console.log(--a, ++b);
-} else {console.log(++a, --b);
-}
+} else if (a < b) {
+    console.log(++a, --b);
+} else (a, b);
 
 /* Nr. 5 */
-console.log('Nr5');
+console.log('---Nr5---');
 
 let c = 50;
 let p = 20; 
@@ -60,7 +59,7 @@ console.log('Saulius nusipirks ' + Math.floor(c / p) + ' porcijas, liks ' + c % 
 
 
 /* Nr. 6 */
-console.log('Nr6');
+console.log('---Nr6---');
 
 n = 11;
 if ((n % 3) === 0) {
@@ -74,24 +73,18 @@ if((n % 3) !== 0) {
 }
 
 /* Nr. 7 * NETEISINGAS */
-console.log('Nr7');
+console.log('---Nr7---');
 
 let m = 50
 if(m == 2) {
     console.log('28');
-} else if(m == 4) {
+} else if(m == 4 || m == 6 || m == 9 || m == 11) {
     console.log('30');
-} else if(m == 6) {
-    console.log('30');
-} else if(m == 9) {
-    console.log('30');
-} else if(m == 11) {
-    console.log('30');
-} else if(m <= 12, m !==0) {
+} else {
     console.log('31');
 }
 /* Nr 8 */
-console.log('Nr8')
+console.log('---Nr8---')
 
 k = 6;
 if(k % 2 === 1) {
@@ -100,24 +93,16 @@ if(k % 2 === 1) {
 }
 
 /* Nr9 */
-console.log('Nr9')
+console.log('---Nr9---')
 
 m = 1904;
-if((m - 1896) % 4 == 0) {
+if(m % 4 == 0) {
    console.log((m - 1896)/ 4 + 1);
 } else {console.log('Metai neolimpiniai');
 }
 
-m = 1908;
-let om = m - 1896;
-if(om % 4 == 0) {
-    console.log(om / 4 + 1);
-} else {console.log('Metai neolimpiniai');
-}
-
-
 /* 10 */
-console.log('Nr10')
+console.log('---Nr10---')
 
 let v1 = 8;
 let m1 = 29;

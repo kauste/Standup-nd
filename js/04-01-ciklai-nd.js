@@ -16,7 +16,7 @@ for (let n = 0; n < 5; n++) {
 /* Nr.3. */
 console.log('--Nr.3.--')
 
-for(let n = 0; n <51; n += 10) {
+for(let n = 0; n <41; n += 10) {
     console.log(n);
 }
 
@@ -30,12 +30,14 @@ for(let n = 49; n <54; n++) {
 /* Nr.5. */
 console.log('--Nr.5.--');
 
+for (i = 0; i <5; i++) {
+    console.log(rand(1, 10));
+}
 function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 } 
 
-const r1 = rand(1, 10)
-console.log(r1)
+
 
 /* Nr.6. */
 console.log('--Nr.6.--');
@@ -67,27 +69,19 @@ for(let i = 1; i < n; i++){
 /* Nr.9. */
 console.log('--Nr.9.--')
 
-let saskaita = 100;
-let palukanos = 0.02;
-const indelioLaikas = 2006;
-const dabartiniaiMetai = 2022;
-const pradinisIndelis = saskaita;
-const praejesLaikas = dabartiniaiMetai - indelioLaikas;
-
-for(let m = 0; m < praejesLaikas-1 ; m++) {
-    saskaita += (saskaita * palukanos)
-    }
-   saskaitaPries = saskaita;
-
-for(let m = 0; m < 1; m++) {
-    saskaita += (saskaita * palukanos)
-    }
-
-    console.log(`Gerbiamas kliente, rašome Jums norėdami pateikti atasakaitą dėl Jūsų sąskaitos, ${dabartiniaiMetai} metu Jūsų sąskaitoje yra ${saskaita} eur., preėjusių metų indėlis buvo ${saskaitaPries} eur, tad Jūsų sąskaita šiais metais paaugo ${saskaita - saskaitaPries} eur. Primename, kad pradinis indėlis padarytas ${indelioLaikas}, sąskaita buvo papildyta ${pradinisIndelis}, tad viso Jūsų sąskaita paaugo ${saskaita - pradinisIndelis}`)
+let indelis = 100;
+let palukanosProc = 0.02;
+n = 5;
+let suPalukanom = indelis;
+for(i = 1; i <= n; i++) {
+    suPalukanom += suPalukanom * palukanosProc;
+    palukanos = suPalukanom - indelis;
+    console.log(`Klientas i saskaita idejo ${indelis} eur. Po ${i} metu buvs ${palukanos} eur palukanu. `);
+    // indelis = suPalukanom; ???? Vis tiek nsupratau ar reikia kiek kasmet palukanu gaus ar kiek bus sukaupes.
+}
 
     /* Nr.10. */
 console.log('--Nr.10.--')
-
 
 for( let m = 0; m < 2022; m += 4) {
         if (m % 400 === 0) {
@@ -100,6 +94,9 @@ let d1 = 400;
             console.log ('keliamieji') 
      } else {console.log('nekeliamieji')
 }
+
+
+
 
 
 
