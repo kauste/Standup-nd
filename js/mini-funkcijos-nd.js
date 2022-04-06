@@ -93,6 +93,25 @@ function telefonoNumeris (masyvas) {
 let m = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 console.log(telefonoNumeris(m));
 
+/* Nr.8. ANTRAS APSUNKINTAS VARIANTAS */
+console.log(`--Nr.8. ANTRAS APSUNKINTAS VARIANTAS--`);
+
+const m2 = [8, 2, 3, 4, 5, 2, 7, 8, 9, 0];
+let visasNumeris = ''
+let visasNumeris1 = ''
+let visasNumeris3 = ''
+function telefonoNumeris2 (masyvas2) {
+    for (i = 0; i < 3; i++) {
+        visasNumeris += m2[i];
+    } for (i = 3; i < 6; i++) {
+        visasNumeris1 +=m2[i];
+    } for (i = 6; i <= 9; i++) {
+        visasNumeris3 += m2[i];  
+    } console.log(`(${visasNumeris}) ${visasNumeris1}-${visasNumeris3}`);
+} 
+
+console.log(telefonoNumeris2(m2));
+
 /* Nr. 9 */
 console.log(`--Nr.9.--`);
 
@@ -114,3 +133,4 @@ for (i = 0; i < zodis.length; i++) {
 }
 
 console.log(suma);
+
