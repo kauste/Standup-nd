@@ -125,7 +125,7 @@ console.log(t);
 /* Nr. 10 */
 console.log(`--Nr.10.--`);
 
-const zodis = 'Sarlatanas';
+const zodis = 'Baobabas';
  let suma = 0;
 for (i = 0; i < zodis.length; i++) {
     if(zodis[i] == 'a');

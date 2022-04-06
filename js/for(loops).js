@@ -77,7 +77,7 @@ for(i = 1; i <= n; i++) {
     suPalukanom += suPalukanom * palukanosProc;
     palukanos = suPalukanom - indelis;
     console.log(`Klientas i saskaita idejo ${indelis} eur. Po ${i} metu buvs ${palukanos} eur palukanu. `);
-    // indelis = suPalukanom; ???? Vis tiek nsupratau ar reikia kiek kasmet palukanu gaus ar kiek bus sukaupes.
+    // indelis = suPalukanom; ???? Vis tiek nsupratau ar reikia ataskaitoje pateikti, kiek kasmet palukanu gaus ar kiek bus sukaupes per kelis metus.
 }
 
     /* Nr.10. */
