@@ -38,10 +38,10 @@ let s = 0; // skyriai ta diena
 while (n <= m) {
     s += 1;
     n += s;
-    d++
+    d++;
 }
 
-console.log(`Tadas knyga perskaitys per ${d} diena, per viena diena vidutiniskai perskaitys ${m / d} skyriu`)
+console.log(`Tadas knyga perskaitys per ${d} diena, per viena diena vidutiniskai perskaitys ${m / d} skyriu`);
 
 /* Nr.4. */
 console.log('-------Nr.4.-------');
@@ -60,17 +60,17 @@ function rand(min, max) {
 console.log('-------Nr.5.-------');
 
 let ciklai = 0;
-let atsitiktinis4 = 0
+let atsitiktinis4 = 0;
 while(atsitiktinis4 !== 5 && atsitiktinis4 !== 7) {
     atsitiktinis4 = rand(0, 10);
     ciklai++;
-    console.log(` ${ciklai} atsitiktinis skaicius:`, atsitiktinis4)
+    console.log(` ${ciklai} atsitiktinis skaicius:`, atsitiktinis4);
     
     
 }
-console.log(`Prasisuko ${ciklai} ciklai.`)
+console.log(`Prasisuko ${ciklai} ciklai.`);
 
 function rand(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
