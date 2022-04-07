@@ -30,8 +30,16 @@ for (let i = 0; i < randIlgis2; i++) {
     masyvas3.push(rand(5, 47));
 }
 
+let bigNum = 0;
+for (i = 0; i < masyvas3.length; i++) {
+    if(masyvas3[i]> bigNum) {
+        bigNum = masyvas3[i];
+    } 
+}
 console.log(masyvas3);
-console.log(Math.max(...masyvas3))
+console.log(bigNum)
+
+
 
 /* Nr. 4. */
 console.log('-----Nr.4.------');
