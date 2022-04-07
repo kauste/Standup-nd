@@ -17,8 +17,7 @@ console.log('-------Nr.2.-------');
 sum = 0;
 let atsitiktinis2 = rand(1, 10);
 
-console.log('atsitiktinis:', atsitiktinis2);
-while(sum % 7 > 0) {
+while(sum % 7 > 0 || sum === 0) {
     console.log(sum)
      sum += atsitiktinis2;
     let atsitiktinis2 = rand(1, 10);

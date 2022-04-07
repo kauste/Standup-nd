@@ -31,6 +31,7 @@ for (let i = 0; i < randIlgis2; i++) {
 }
 
 console.log(masyvas3);
+console.log(Math.max(...masyvas3))
 
 /* Nr. 4. */
 console.log('-----Nr.4.------');
