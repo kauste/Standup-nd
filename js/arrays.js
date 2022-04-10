@@ -45,11 +45,10 @@ console.log(bigNum)
 console.log('-----Nr.4.------');
 
 const masyvas4 = [];
-const raides = 'D, E, F, G, H';
-poRaide = raides.split(',');
+const raides = ['D', 'E', 'F', 'G', 'H'];
 
-for(let i = 0; i < (100/poRaide.length); i++) {
-       masyvas4.push(...poRaide);
+for(let i = 0; i < 100; i++) {
+       masyvas4.push(raides[rand(0, 4)]);
 }
 
 console.log(masyvas4);
@@ -57,36 +56,35 @@ console.log(masyvas4);
 /* Nr. 5.  */
 console.log('-----Nr.5.------');
 const masyvas5 = [];
-const raide1 = 'M';
-const raide2 = 'N';
-const raide3 = 'O';
-const raide4 = 'P';
-sumRaide1 = 0;
-sumRaide2 = 0;
-sumRaide3 = 0;
-sumRaide4 = 0;
-for (i = 0; masyvas5.length < 100; i++) {
-    masyvas5.push(raide1);
-    sumRaide1 += 1;
-    masyvas5.push(raide2);
-    sumRaide2 += 1;
-    masyvas5.push(raide3);
-    sumRaide3 += 1;
-    masyvas5.push(raide4);
-    sumRaide4 += 1;
-
+const raides2 = ['A', 'B', 'C', 'D']
+sumA = 0;
+sumB = 0;
+sumC = 0;
+sumD = 0;
+for (i = 0; i < 100; i++) {
+    atsitiktine = raides2[rand(0, 3)];
+    masyvas5.push(atsitiktine);
+    if (atsitiktine === 'A') {
+        sumA += 1;
+    }
+    if (atsitiktine === 'B') {
+        sumB += 1;
+    }
+    if (atsitiktine === 'C') {
+        sumC += 1;
+    }
+    if (atsitiktine === 'D') {
+        sumD += 1;
+    }
 }
 console.log(masyvas5);
-const masyvas5a = [sumRaide1, sumRaide2, sumRaide3, sumRaide4];
-biggestNum = -Infinity;
-for (i = 0; i< masyvas.length; i++) {
+const masyvas5a = [sumA, sumB, sumC, sumD];
+biggestNum = -1;
+for (i = 0; i< masyvas5a.length; i++) {
     if(biggestNum < masyvas5a[i]){
         biggestNum = masyvas5a[i]
-    } else if(biggestNum === masyvas5a[i]) {
-        biggestNum === biggestNum || masyvas5a[i]
-    }
-} 
-
+    } 
+}
 
 /* Nr. 6. */
 console.log('-----Nr.6.------');
